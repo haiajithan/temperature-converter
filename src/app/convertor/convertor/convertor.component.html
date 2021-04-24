@@ -1,0 +1,39 @@
+<div class='card'>
+    <div class='card-header'>
+        <p>{{title}} </p>
+    </div>
+
+    <div class="card-body">
+
+        <!-- <div class="row">
+            <h3>Fahrenheit to Celsius </h3>
+        </div> -->
+        <div class="row col-9">
+            <div class="col-3">
+                <select class="form-select form-select-sm" aria-label="Default select example"
+                    (change)="onFirstChange($event.target.value)">
+                    <option selected>Select Temperature</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Celsius">Celsius</option>
+                    <option value="Kelvin">Kelvin </option>
+                </select>
+            </div>
+            <div class="col-3">
+                <input class="form-control" type="number" type="text" [(ngModel)]="firstChoiceValue" />
+            </div>
+            <div class="col-3">
+                <select class="form-select form-select-sm" aria-label="Default select example"
+                    (change)="onSecondChange($event.target.value)">
+                    <option selected>Select Temperature</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Celsius">Celsius</option>
+                    <option value="Kelvin">Kelvin </option>
+                </select>
+            </div>
+            <div class="col-3">
+                <input class="form-control" type="number" readonly type="text" [(ngModel)]="secondChoiceValue" />
+            </div>
+        </div>
+    </div>
+
+</div>
